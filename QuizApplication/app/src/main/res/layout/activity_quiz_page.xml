@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/QUESTIONNUMBER"
+
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:text=""
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/QUESTIONTEXT"
+
+            android:layout_width="match_parent"
+            android:layout_height="237dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/scoreboardtext"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="Score " />
+
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="51dp" />
+
+        <Button
+            android:id="@+id/OPTION1"
+            android:onClick="selectOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="option1" />
+
+        <Button
+        android:id="@+id/OPTION2"
+            android:onClick="selectTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="option2" />
+
+        <Button
+            android:id="@+id/OPTION3"
+            android:onClick="selectThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="option3" />
+
+        <Button
+            android:id="@+id/OPTION4"
+            android:onClick="selectFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="option4" />
+
+
+        <Button
+            android:id="@+id/NEXT"
+            android:onClick="nextQuestion"
+            android:background="@android:color/holo_green_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEXT" />
+
+    </LinearLayout>
+</LinearLayout>
